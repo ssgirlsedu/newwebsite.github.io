@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRIRAM INSTITUTE OF MARINE STUDIES</title>
+    <link rel="icon" href="../assets/images/brand/favicon.png" type="image/*" />
+
+    <!-- Third party css  -->
+    <link rel="stylesheet" href="../assets/css/third_party/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/third_party/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/third_party/sweetalert.css" />
+    <link rel="stylesheet" href="../assets/css/third_party/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.min.css" />
+    <!-- custom Css  -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+
+    <script type="text/javascript">
+        var base_url = 'http://www.simsnd.in/';
+        var csrf_test_name = 'csrf_test_name';
+        var csrf_hash = '3eb79d89ffc0bf55ec3c2c0ea2a678a3';
+    </script>
+</head>
+
+<body>
+    <!-- loader  -->
+    <div id="loader"></div>
+    <!-- loader Ends -->
+
+    <div class="main__container">  <!-- Header  -->
+  <header class="header__section">
+      <div class="header__container">
+          <a href="../www_simsnd_default.html" class="brand__container">
+              <img src="../assets/images/brand/logo.png" alt="Brand Logo" />
+          </a>
+          <div class="navigatiom_button">
+              <a href="../onlineclasses.htm" target="_blank" class="main__link">Online Classes</a>
+              <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink ">Book Now</a>
+          </div>
+          <!-- <div class="brand__information__container">
+              <h5>Contact Us</h5>
+              <div class="contact__containers">
+                  <div class="call_container">
+                      <p><b>Course Booking:</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9911380070" class="connection__links">+91-99113-80070</a>
+                          <a href="tel:9911486060" class="connection__links ml-2"> +91-99114-86060</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Accounts :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990250070" class="connection__links">+91-99902-50070</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Helpline IMS Portal :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990565959" class="connection__links">+91-99905-65959</a>
+                      </div>
+                  </div> -->
+          <!-- <a href="mailto:coursebooking@simsnd.in" class="connection__links">coursebooking@simsnd.in</a> -->
+          <!-- </div> -->
+      </div>
+      </div>
+
+      <div class="mobile__header">
+          <div class="mobile_nav">
+              <a class="mobile__brand" href="../www_simsnd_default.html">
+                  <img src="../assets/images/brand/logo.png" alt="Brand Logo" />
+              </a>
+              <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <nav class="navigation__section">
+      <div class="navigation__container">
+          <a href="../www_simsnd_default.html">Home</a>
+          <a href="../about.htm">About Us</a>
+          <a href="../campus.htm">Campus</a>
+          <div class="drop__down__menu">
+              <a href="javascript:void(0)" class="on_mobile_disabled">Courses <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown__container">
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Pre Sea Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="../pre_sea_dns_course.htm">Pre Sea DNS</a>
+                          <a href="../pre_sea_gpr_course.htm">Pre Sea GP Rating</a>
+                      </div>
+
+                  </div>
+                  <a href="../basic_saftey_course.htm">Basic Saftey Courses</a>
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Special Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="../stsdsd.htm">STSDSD</a>
+                          <a href="../basic_training_oil_and_tanker_october.htm">Basic Training Oil & Tanker October</a>
+                          <a href="../passenger_ship_familiarization.htm"> Passenger Ship Familiarization</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Advanced STCW Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="../advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                          <a href="../pscrb.htm">PSCRB</a>
+                          <a href="../medical_first_aid_course.htm">Medical First aid Course</a>
+                          <a href="../ship_security_officer.htm">Ship Security Officer</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Simulator Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="../radar_observer.htm">Radar Observer</a>
+                          <a href="../auto_radar_plotting_aids.htm">Auto Radar Plotting Aids</a>
+                          <a href="../radar_navigation_simulator_course.htm">Radar Navigation Simulator Course</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Refresher Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="../personal_survival_technique.htm">Personal Survival Technique</a>
+                          <a href="../personal_saftey_and_social_responsibility.htm">Personal Safety & Social Responsibility</a>
+                          <a href="../refresher_advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                      </div>
+
+                  </div>
+
+
+                  <a href="../pre_sea_dns_course.htm" class=" course_menu_sub">Pre Sea DNS</a>
+                  <a href="../pre_sea_gpr_course.htm" class=" course_menu_sub">Pre Sea GP Rating</a>
+
+                  <a href="../stsdsd.htm"  class=" course_menu_sub">STSDSD</a>
+                  <a href="../basic_training_oil_and_tanker_october.htm" class=" course_menu_sub">Basic Training Oil & Tanker October</a>
+                  <a href="../passenger_ship_familiarization.htm" class=" course_menu_sub"> Passenger Ship Familiarization</a>
+
+                  <a href="../advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+                  <a href="../pscrb.htm"  class=" course_menu_sub">PSCRB</a>
+                  <a href="../medical_first_aid_course.htm" class=" course_menu_sub">Medical First aid Course</a>
+                  <a href="../ship_security_officer.htm" class=" course_menu_sub">Ship Security Officer</a>
+
+                  <a href="../radar_observer.htm" class=" course_menu_sub">Radar Observer</a>
+                  <a href="../auto_radar_plotting_aids.htm" class=" course_menu_sub">Auto Radar Plotting Aids</a>
+                  <a href="../radar_navigation_simulator_course.htm" class=" course_menu_sub">Radar Navigation Simulator Course</a>
+
+                  <a href="../personal_survival_technique.htm" class=" course_menu_sub">Personal Survival Technique</a>
+                  <a href="../personal_saftey_and_social_responsibility.htm" class=" course_menu_sub">Personal Safety & Social Responsibility</a>
+                  <a href="../refresher_advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+
+              </div>
+          </div>
+          <a href="../admission_notice.htm">Admission</a>
+          <a href="../results.htm">Results</a>
+          <a href="../alumni.htm">Alumni</a>
+          <a href="../events.htm">Events</a>
+          <a href="../faculties.htm">Faculties</a>
+          <a href="../rising_star.htm">Rising Stars</a>
+
+          <!-- <a href="placements">Placements</a> -->
+          <a href="../contact_us.htm">Contact Us</a>
+          <a href="../archive.htm">Archive</a>
+          <a href="../onlineclasses.htm" target="_blank" class="main__link mobile_class">Online Classes</a>
+          <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink mobile_class">Book Now</a>
+      </div>
+  </nav>
+
+  <!-- Header Ends --><div class="container-fluid all_news_container">
+    <h3>Latest Orders</h3>
+            <div class="row">
+            <div class="table_responsive">
+                <table class="table table-bodered table-hovered w-100" id="new_notification_table">
+                    <thead>
+                        <tr>
+                            <th>Sl.</th>
+                            <th>Topic</th>
+                            <th>Description</th>
+                            <th>Upload Date</th>
+                            <th>Attachment</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                                                    <tr>
+                                <td>1</td>
+                                <td>An Extract of DGS  website - Results GP Rating AIEE Dec 2022</td>
+                                <td>GP Rating July - Dec AIEE Results</td>
+                                <td>07-02-2023</td>
+                                <td>
+                                    <a href="../assets/admin/news/167577720135174891060_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>2</td>
+                                <td>Schedules of Practical training of STCW courses {Part B } for the month of February 2023</td>
+                                <td>STCW Part B schedule February 2023</td>
+                                <td>01-02-2023</td>
+                                <td>
+                                    <a href="../assets/admin/news/167526701072727199976_news.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>3</td>
+                                <td>List of student admitted in Pre Sea GP Rating January 2023 course</td>
+                                <td>Students admitted in GP Jan 2023 batch</td>
+                                <td>01-02-2023</td>
+                                <td>
+                                    <a href="../assets/admin/news/167526669414464970260_news.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>4</td>
+                                <td>Practical Training {Part B} schedule for the month January 2023</td>
+                                <td>Practical training {Part B} schedule fin the month --January 2023</td>
+                                <td>14-12-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/167103125593161898240_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>5</td>
+                                <td>STCW course planner Jan - March 2023</td>
+                                <td>STCW Course Planner  January  - March 2023</td>
+                                <td>14-12-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/167103114789153468325_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>6</td>
+                                <td>Practical Training {Part B} schedule for the month of November 2022</td>
+                                <td>Part B courses November 2022 at SIMS Delhi</td>
+                                <td>20-10-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16662554181029170895_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>7</td>
+                                <td>GP January 203 course - Students  induction</td>
+                                <td>Admission procedure for Pre Sea GP Rating course January 2023</td>
+                                <td>20-10-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/166625529532120314277_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>8</td>
+                                <td>SIMS Notice No 34 f 2022</td>
+                                <td>Correction in Seafarers INDoS/Profile regarding</td>
+                                <td>18-07-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/165816161884302616717_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>9</td>
+                                <td>SIMS Notice No 33 of 2022</td>
+                                <td>Refunds of Registration fees GP Rating July 2022 course</td>
+                                <td>18-07-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/165815848712205125867_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>10</td>
+                                <td>SIMS Notice no 32 of 2022</td>
+                                <td>Closing of admission and final list of GP course students July 2022 course</td>
+                                <td>18-07-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/165815707830658489074_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>11</td>
+                                <td>SIMS Notice No 22 of 2022 An extract of DGS Order- Re opening of MTIs with 100% capacity.</td>
+                                <td>22.03.2022</td>
+                                <td>27-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164838543844725597378_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>12</td>
+                                <td>SIMS Notice no 21 of 2022 Fine List ofDNS and GP Rating till 15.03.2022</td>
+                                <td>21.03.2022</td>
+                                <td>27-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164838528343733335300_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>13</td>
+                                <td>SIMS Notice no 20 of 2022- Duties of officers and staff.</td>
+                                <td>20.03.2022</td>
+                                <td>27-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164838518033687071560_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>14</td>
+                                <td>SIMS Notice No 19 of 2022  Amendment in Notice no 15, 16 and 18 of 2022</td>
+                                <td>19.03.2022</td>
+                                <td>27-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164838482972996925296_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>15</td>
+                                <td>SIIMS Notice No 18 of 2022 Conduct of 2nd unit test- DNS and GP Courses</td>
+                                <td>16.03.2022</td>
+                                <td>27-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16483846238254451248_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>16</td>
+                                <td>Notice No 17 of 2022  Holiday on account of Hol festival</td>
+                                <td>15.03.2022</td>
+                                <td>27-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164838435860985216389_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>17</td>
+                                <td>SIMS Noice No 16 of 2022 dated 10.03.2022</td>
+                                <td>27.03.2022</td>
+                                <td>27-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164838419534838614799_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>18</td>
+                                <td>SIMS Notice No 15 of 2022 dated 10.03.2022 Dress code for faculty & Instructors in campus</td>
+                                <td>10.03.2022</td>
+                                <td>23-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164804985313919869277_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>19</td>
+                                <td>SIMS Notice No 14 of 2022 dated 09.03.2022 - Duty of officer of  day</td>
+                                <td></td>
+                                <td>23-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164804951098087248053_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>20</td>
+                                <td>Holiday on account of Mahashivratri on 01.03.2022, Tuesday</td>
+                                <td>Date 26.02.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674138044446566847_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>21</td>
+                                <td>Implementation of Fresh forms admin/trg purposes</td>
+                                <td>Date 25.02.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674128068058445705_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>22</td>
+                                <td>Conduct of Basic Safety Training Course for Pre Sea GP Rating course commenced from 01.01.2022</td>
+                                <td>Date 11.02.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674120962953155733_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>23</td>
+                                <td>Conduct of 2nd Semester DNS Course November 2021 Course</td>
+                                <td>Date 10.02.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674108357548842125_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>24</td>
+                                <td>Conduuct of 01st Unit Test of Pre Sea GP Rating course January 2022 curse Regarding (Online proctor mode)</td>
+                                <td>Date 10.02.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674081138655417290_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>25</td>
+                                <td>Practical Training of DNS and GP Rating 2nd Batch 01st Feb 2022</td>
+                                <td>Date 22.01.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674066524352480773_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>26</td>
+                                <td>Amendment in 2nd Internal assessment Date Sheet of DNS Nov 2021</td>
+                                <td>Date 14.01.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674056280340045436_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>27</td>
+                                <td>Uploding of Medical Certificte by DGS approved Medical Doctors -GP Rating Course Students January 2022 Course</td>
+                                <td>Date 15.01.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164674029836029825417_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>28</td>
+                                <td>Internal Assessment Pre Sea Course DNS Nov 2021</td>
+                                <td>Date 10.01.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16467400554488430339_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>29</td>
+                                <td>Operation of institute during coming covid situation effective from 07.02.2022. QMS Notice no. 3 of 2021</td>
+                                <td>Dated 06.01.2022</td>
+                                <td>08-03-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164673984990505520049_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>30</td>
+                                <td>Submission of 2nd Semester Course fees DNS Course Nov 2021. QMS Notice no. 2 of 2022</td>
+                                <td>Date: 06/01/2022</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164155117622850113009_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>31</td>
+                                <td>University Practical DNS Course Nov 2020. QMS Notice no. 22 of 2021</td>
+                                <td>Date: 03/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154330467825854048_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>32</td>
+                                <td>Adaptation of Centralized attendance System of DGS by institute. QMS Notice no. 23 of 2021</td>
+                                <td>Date: 06/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154321653778028225_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>33</td>
+                                <td>Implementation of responsibility of course instructors. QMS Noice no. 24 of 2021</td>
+                                <td>Date: 06/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16415431273983515902_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>34</td>
+                                <td>Implementation of Central Attendance System (CAS) on Attendance of Students</td>
+                                <td>Date: 08/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154301978864534538_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>35</td>
+                                <td>Submission of balance of course fees by Pre Sea GP Rating Course July 2021 Course regarding. QMS Notice no. 26 of 2021</td>
+                                <td>Date: 08/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16415429205362132734_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>36</td>
+                                <td>Conduct of mid term examination Pre Sea GP Rating  Course July 2021 Batch. QMS Notice no. 27 of 2021</td>
+                                <td>Date: 12/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154276521846607511_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>37</td>
+                                <td>Postponed of All Practical scheduled from 16.11.2021 to 20.11.2021. STCW courses. QMS Notice no. 28 of 2021</td>
+                                <td>Date: 15/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154265331666728180_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>38</td>
+                                <td>Withdrawn from the Course Pre Sea GP rating July 2021 Course</td>
+                                <td>Date: 17/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154246527307715699_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>39</td>
+                                <td>Booking procedure of Part B (Practical Training) of STCW Course. QMS Notice no. 30 of 2021</td>
+                                <td>Date: 19/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154233781331695390_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>40</td>
+                                <td>Closure Status of Part B (Practical training) view on Orders of Govt. of NCT Delhi, QMS Notice no. 31 of 2021</td>
+                                <td>Date: 22/11/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16415422318771895715_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>41</td>
+                                <td>SIMS Internal/Departmental Order no. 02 of 2021 Dated 01/10/2021</td>
+                                <td>Dated: 01/10/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154210227464765272_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>42</td>
+                                <td>Submission of Course fee Pre Sea Course for GP Rating July 2021 Course. QMS Notice no. 17 of 2021</td>
+                                <td>Date: 08/10/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154193456358457015_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>43</td>
+                                <td>Commencement of Pre Sea DNS Course scheduled from 10.10.2021, QMS Notice No. 19 of 2021</td>
+                                <td>Date: 14/10/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154174648808058571_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>44</td>
+                                <td>Amendment in course planner GP Rating course wef July 2021. QMS notice no. 18 of 2021</td>
+                                <td>Date: 14/10/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154162521600553138_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>45</td>
+                                <td>Re-opening of MTIs DGS Training cicular 32 of 2021 dated 22.10.2021</td>
+                                <td>Date: 25/20/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16415415212250701947_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>46</td>
+                                <td>Conduct of University practical. QMS Notice no. 21 of 2021</td>
+                                <td>Date: 28/10/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16415414139850845661_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>47</td>
+                                <td>Collection of BES Certificate - Only for succesful students of All India Exit Examination conducted by BSE Mumbai</td>
+                                <td>Date: 02/09/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154132963989593075_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>48</td>
+                                <td>Holiday on account of Ganesh Charuthi on 11.09.2021. SIMS Notice no. 11 of 2021</td>
+                                <td>Date: 09/09/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154121048611838834_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>49</td>
+                                <td>Requirment of tailor for cadets outfit/uniform Oct 2021 courses. QMS Notice no. 13 of 2021</td>
+                                <td>Date: 11/09/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154108446504348172_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>50</td>
+                                <td>Clearance of Pending CDCs application Pre Sea Course for GP Rating Jan 2020 & 2021. QMS Notice no. 14 of 2021</td>
+                                <td>Date: 16/09/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154096014038721757_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>51</td>
+                                <td>Recall of GPR Class 3 (06/2021) for Practical Training Sea Course GP Rating July 2021. QMS Notice No. 15 of 2021</td>
+                                <td>Date: 19/09/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154070089277402222_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>52</td>
+                                <td>Admission in DNS Oct 2021 Courses. QMS Notice No. 16 of 2021</td>
+                                <td>Date: 24/09/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164154050799708400204_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>53</td>
+                                <td>Recall of GPR Class 2 (04/2021) for Practile Training-Sea Course GP Rating Jan 2021</td>
+                                <td>Dated: 12/08/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16415383856523346127_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>54</td>
+                                <td>Leave quota for the year 2021 in respect of faculty and staff enrolled on fulltime only</td>
+                                <td>Dated: 29/08/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164153795427392396240_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>55</td>
+                                <td>Faculty identification Number</td>
+                                <td>Dated: 22/07/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164153784182099389954_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>56</td>
+                                <td>Permanent withdrawal from Pre Sea Course GP Rating Jan 2020</td>
+                                <td>Dated: 24/07/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/164153765793563148448_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>57</td>
+                                <td>Re commencement of Practical training Pre Sea & Post Sea Courses</td>
+                                <td>Dated: 27/05/2021</td>
+                                <td>07-01-2022</td>
+                                <td>
+                                    <a href="../assets/admin/news/16415374787050449150_news.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                </td>
+                            </tr>
+                                            </tbody>
+                </table>
+            </div>
+        </div>
+    
+</div> <!-- Footer   -->
+
+ <div class="footer__section">
+     <div class="footer__container">
+         <div class="footer__column__one footer__column">
+             <a href="../chairman_message.htm">Chairman's Message</a>
+             <a href="../directors_message.htm">Director's Message </a>
+             <a href="../refund_policy.htm">Refund Policy</a>
+             <!-- <a href="javascript:void(0);">Faculty Profile</a> -->
+         </div>
+
+         <div class="footer__column__two footer__column">
+             <a href="../privacy_policy.htm">Privacy Policy</a>
+             <a href="../terms_and_conditions.htm"> Terms and Conditions</a>
+             <a href="../contact_us.htm">Submit Feedback</a>
+             <a href="javascript:void(0);">Student Corner</a>
+         </div>
+
+         <div class="footer__column__three">
+             <h6>Connect With Us</h6>
+             <div class="footer__social">
+                 <a href="https://www.facebook.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-facebook fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-twitter-square fa-2x"></i></a>
+                 <a href="https://www.instagram.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-instagram fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-youtube fa-2x"></i></a>
+             </div>
+         </div>
+
+         <div class="footer__column__four footer__column">
+             <div class="footer__address">
+                 <p class="text-head">Address:</p>
+                 <p>Village Bamnoli, Sector 28, Dwarka,</p>
+                 <p>Near Dwarka Sector 21 Metro Station,</p>
+                 <p> New Delhi - 110077</p>
+             </div>
+             <div class="footer__contact">
+                 <p class="text-head">Mobile:</p>
+                 <a href="tel:9911486060">+91-9911486060</a>
+             </div>
+
+             <div class="footer__mail">
+                 <p class="text-head">Email:</p>
+                 <a href="mailto:coursebooking@simsnd.in">coursebooking@simsnd.in</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="copy__right__section">
+     <div class="copy__right__container">
+         <p>Copyright © 2023 SIMSND. All Rights Reserved</p>
+         <a href="https://brandremaster.com/" target="_blank" rel="dofollow" style="color:#012447 !important;">Design By Brand Remaster</a>
+         <div class="visitor__container">
+             <p>Total Visitors: <span id="visitor_count">1421886</span></p>
+         </div>
+     </div>
+ </div>
+ <!-- Footer Ends  -->
+ </div>
+ <!-- Third Party Scripts -->
+
+ <script src="../assets/js/third_party/jquery.min.js"></script>
+ <script src="../assets/js/third_party/popper.min.js"></script>
+ <script src="../assets/js/third_party/bootstrap.min.js"></script>
+ <script src="../assets/js/third_party/sweetalert.min.js"></script>
+ <script src="../assets/js/third_party/slick.min.js"></script>
+ <script src="../assets/js/third_party/jquery.dataTables.min.js"></script>
+ <script src="../assets/fontawesome/js/all.js"></script>
+ <script src="../assets/lightgallery/js/lightgallery.min.js"></script>
+ <script src="../assets/lightgallery/js/lg-fullscreen.min.js"></script>
+ <script src="../assets/lightgallery/js/lg-hash.min.js"></script>
+ <script src="../assets/lightgallery/js/lg-pager.min.js"></script>
+ <script src="../assets/lightgallery/js/lg-thumbnail.min.js"></script>
+ <script src="../assets/lightgallery/js/lg-video.min.js"></script>
+ <script src="../assets/lightgallery/js/lg-zoom.min.js"></script>
+ <script src="http://www.simsnd.in/assets/js/main.js"></script>
+ </body>
+
+ </html>

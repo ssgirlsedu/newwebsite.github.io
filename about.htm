@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRIRAM INSTITUTE OF MARINE STUDIES</title>
+    <link rel="icon" href="assets/images/brand/favicon.png" type="image/*" />
+
+    <!-- Third party css  -->
+    <link rel="stylesheet" href="assets/css/third_party/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/sweetalert.css" />
+    <link rel="stylesheet" href="assets/css/third_party/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.min.css" />
+    <!-- custom Css  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+    <script type="text/javascript">
+        var base_url = 'http://www.simsnd.in/';
+        var csrf_test_name = 'csrf_test_name';
+        var csrf_hash = '3eb79d89ffc0bf55ec3c2c0ea2a678a3';
+    </script>
+</head>
+
+<body>
+    <!-- loader  -->
+    <div id="loader"></div>
+    <!-- loader Ends -->
+
+    <div class="main__container">  <!-- Header  -->
+  <header class="header__section">
+      <div class="header__container">
+          <a href="www_simsnd_default.html" class="brand__container">
+              <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+          </a>
+          <div class="navigatiom_button">
+              <a href="onlineclasses.htm" target="_blank" class="main__link">Online Classes</a>
+              <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink ">Book Now</a>
+          </div>
+          <!-- <div class="brand__information__container">
+              <h5>Contact Us</h5>
+              <div class="contact__containers">
+                  <div class="call_container">
+                      <p><b>Course Booking:</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9911380070" class="connection__links">+91-99113-80070</a>
+                          <a href="tel:9911486060" class="connection__links ml-2"> +91-99114-86060</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Accounts :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990250070" class="connection__links">+91-99902-50070</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Helpline IMS Portal :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990565959" class="connection__links">+91-99905-65959</a>
+                      </div>
+                  </div> -->
+          <!-- <a href="mailto:coursebooking@simsnd.in" class="connection__links">coursebooking@simsnd.in</a> -->
+          <!-- </div> -->
+      </div>
+      </div>
+
+      <div class="mobile__header">
+          <div class="mobile_nav">
+              <a class="mobile__brand" href="www_simsnd_default.html">
+                  <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+              </a>
+              <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <nav class="navigation__section">
+      <div class="navigation__container">
+          <a href="www_simsnd_default.html">Home</a>
+          <a href="about.htm">About Us</a>
+          <a href="campus.htm">Campus</a>
+          <div class="drop__down__menu">
+              <a href="javascript:void(0)" class="on_mobile_disabled">Courses <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown__container">
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Pre Sea Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="pre_sea_dns_course.htm">Pre Sea DNS</a>
+                          <a href="pre_sea_gpr_course.htm">Pre Sea GP Rating</a>
+                      </div>
+
+                  </div>
+                  <a href="basic_saftey_course.htm">Basic Saftey Courses</a>
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Special Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="stsdsd.htm">STSDSD</a>
+                          <a href="basic_training_oil_and_tanker_october.htm">Basic Training Oil & Tanker October</a>
+                          <a href="passenger_ship_familiarization.htm"> Passenger Ship Familiarization</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Advanced STCW Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                          <a href="pscrb.htm">PSCRB</a>
+                          <a href="medical_first_aid_course.htm">Medical First aid Course</a>
+                          <a href="ship_security_officer.htm">Ship Security Officer</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Simulator Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="radar_observer.htm">Radar Observer</a>
+                          <a href="auto_radar_plotting_aids.htm">Auto Radar Plotting Aids</a>
+                          <a href="radar_navigation_simulator_course.htm">Radar Navigation Simulator Course</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Refresher Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="personal_survival_technique.htm">Personal Survival Technique</a>
+                          <a href="personal_saftey_and_social_responsibility.htm">Personal Safety & Social Responsibility</a>
+                          <a href="refresher_advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                      </div>
+
+                  </div>
+
+
+                  <a href="pre_sea_dns_course.htm" class=" course_menu_sub">Pre Sea DNS</a>
+                  <a href="pre_sea_gpr_course.htm" class=" course_menu_sub">Pre Sea GP Rating</a>
+
+                  <a href="stsdsd.htm"  class=" course_menu_sub">STSDSD</a>
+                  <a href="basic_training_oil_and_tanker_october.htm" class=" course_menu_sub">Basic Training Oil & Tanker October</a>
+                  <a href="passenger_ship_familiarization.htm" class=" course_menu_sub"> Passenger Ship Familiarization</a>
+
+                  <a href="advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+                  <a href="pscrb.htm"  class=" course_menu_sub">PSCRB</a>
+                  <a href="medical_first_aid_course.htm" class=" course_menu_sub">Medical First aid Course</a>
+                  <a href="ship_security_officer.htm" class=" course_menu_sub">Ship Security Officer</a>
+
+                  <a href="radar_observer.htm" class=" course_menu_sub">Radar Observer</a>
+                  <a href="auto_radar_plotting_aids.htm" class=" course_menu_sub">Auto Radar Plotting Aids</a>
+                  <a href="radar_navigation_simulator_course.htm" class=" course_menu_sub">Radar Navigation Simulator Course</a>
+
+                  <a href="personal_survival_technique.htm" class=" course_menu_sub">Personal Survival Technique</a>
+                  <a href="personal_saftey_and_social_responsibility.htm" class=" course_menu_sub">Personal Safety & Social Responsibility</a>
+                  <a href="refresher_advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+
+              </div>
+          </div>
+          <a href="admission_notice.htm">Admission</a>
+          <a href="results.htm">Results</a>
+          <a href="alumni.htm">Alumni</a>
+          <a href="events.htm">Events</a>
+          <a href="faculties.htm">Faculties</a>
+          <a href="rising_star.htm">Rising Stars</a>
+
+          <!-- <a href="placements">Placements</a> -->
+          <a href="contact_us.htm">Contact Us</a>
+          <a href="archive.htm">Archive</a>
+          <a href="onlineclasses.htm" target="_blank" class="main__link mobile_class">Online Classes</a>
+          <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink mobile_class">Book Now</a>
+      </div>
+  </nav>
+
+  <!-- Header Ends --><!-- Page banner  -->
+<div class="page__banner__section">
+    <div class="page__banner">
+        <img src="assets/images/about/about-banner.jpg" alt="About banner" />
+    </div>
+</div>
+
+<!-- About Content  -->
+
+<div class="course__details__section">
+    <div class="course__details__container">
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    A brief on Institute - Sriram Institute of Marine Studies New Delhi
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    The institute has always moved with interest to create landmarks in Indian Maritime Education and training by providing the sea berths to its passed out students with a fair, noble and good intensions keeping the interest of the ship owners to man their good vessel.
+                </p>
+                <p>
+                    We are open to bigger and larger shipping companies to train their selected officers and rating as per their requirements including the requirements of the Indian Maritime Administration.</p>
+                <p>
+                    The time tested faculty and staff has always remained as light house for our beloved students and enable them to become a figure in the Maritime industry.</p>
+                <p>
+                    We assure that students admitted in courses in our institute shall be an asset to the shipping company being groomed on maritime profession, international behaviour and good teaching tracks.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    An Introduction
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    M/s Sriram Institute of Marine Studies, an unique institute in northern India imparting Maritime Education and training for officers and rating. The institute has courses for beginners as basic safety training courses to Radar and Navigation Simulator courses at its campus in New Delhi. The institute has its own campus in metro city Delhi Dwarka and spread over 10 acors of land, purely utilized for marine education and training. The institute approved by the Directorate General of Shipping, Govt. of India in January 2003 with a mare course of deck rating and few basic STCW courses. The institute honoured to be the very first institute to start Fire Fighting course in city like Delhi. The institute has also honour to be single ownership/promoter, belongs to a noble family, self-determined, exemplary and honest. Presently the institute has 43 courses on the Board of DG Shipping Govt. of India and has many accreditations by the Govt. of India and private institutions. The institute has always honoured the hand and glove relationship with shipping and marine company to ensure the on board placement of its passed out students.
+
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Accreditation:
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    1.<b>Directorate General of Shipping, Govt. of India-</b> All Maritime courses purely approved by the DGS are conducted.
+
+                </p>
+
+                <p>
+                    2.<b>Indian Maritime University- </b>Incorporation since inception of the very first Maritime University in India in 2008. Prior to birth of IMU, we did courses under IGNOU Delhi.
+
+                </p>
+
+                <p>
+                    3.<b>M/s Indian Register of Shipping-</b> Mumbai - Bench marking and CIPs
+                    .
+
+                </p>
+
+                <p>
+                    4.<b>M/s IR Class System solutions {IRS} –</b> ISO 9001:2015 certification.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Objectives:
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    The overall objective of the institute is to spread maritime Education and Training in India and overseas.
+                </p>
+                <p> To provide sea berths/slots on board placement to its passed out cadets and rating.
+                    Special discount/subsidiary fees from weaker students/son of widows and help them for future employment.
+                </p>
+                <p>
+                    Increase the employability of Indians in maritime sector including shore and port jobs.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Management Members
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    <b>Sh Manjeet lochav</b>, Chairman is the single owner, land lord and promoter of this institute and hold 100% risk, liability, assertor and capital.
+
+                </p>
+                <p><b>Executive Director:</b> Sh joginder Singh, the founder director of institute heading area of Inter-person relationship, admission, administration, training, accreditations.
+                </p>
+                <p>
+                    <b>Head of Institute:</b> Sh Sudhir Nijhawan MEO 1 Class, taking charge on matter related to training and student staff welfare issue.
+                </p>
+                <p>
+                    <b>HOD Nautical-</b> Capt Dheeraj Prasad Sinha, course coordinator of DNS Course, is an ex faculty of this institute re-joined us last year after serving Indian maritime University as Nautical head.
+                </p>
+                <p> <b>HOD Post Deck Course:</b> Capt Rakesh kumar, Ex GEIMS heading and taking charge of post sea and Advanced STCW {Deck Department}
+                </p>
+                <p><b>HOD Engine and ER Dept-Post sea and STCW courses-</b> Sh Davender Singh MEO 1st Class has been taking charge on all courses regards to Engineering and its department.
+                </p>
+                <p>
+                    Other faculty: we have senior officers
+                </p>
+                <p>
+                    {a} Capt A Shankar Yagnic – ex Gujarat Maritime University
+                </p>
+                <p>{b} Capt DS Yadav – ExSCI</p>
+                <p>{c} Capt ravindra K Chhabra Master FG</p>
+                <p>{d} Capt Kashmir Singh Master FG</p>
+                <p>{d} Sh AK Sharma MEO11</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Classrooms:
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    <b>Class room :</b> Modern class room with smart boards to undertake theory and demonstration, learning and discipline are provided with air conditioned. Class rooms equipped with LCD projector, interactive boards and furniture are bigger in size and with proper ventilation.
+                </p>
+                <p><b>Sport ground:</b> The institute has in campus sport ground for football, volleyball badminton and tracks for the students. Students are taken in intra and interstate institutes for sport activities conducted to honour and celebration National Maritime day and Naugtica.
+                </p>
+                <p>
+                    <b>>Mock ups-</b> Institute has advanced ire fighting, basic fire fighting mocks chamber to train the realistic education such as enclosed space entry, identification and to locate various compartment of a marine merchant vessel.
+                </p>
+                <p>
+                    <b>Ships library:</b> the library located in the ground floor of the building to facilitate students to make use including make use during off working hours also. It has stock of modern journals, navigational, IMO books etc.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Courses approved by the DG Shipping, Govt. of India.
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    The institute purely and purely conducts the DG Shipping approved courses in its campus. We have good turn out of officers and rating walking in daily for these courses. Our passed out students are sailing internationally and earned laurels to the institute. Not only officers, our rating are position well in major shipping company on shore to take care of their fleet. The institute earned course approval of Pre sea Post sea, Competency till master & mates, basic safety, advanced Safety, tankers, simulators and passenger ships.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Faculty and teachers:
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    The institute has a very good retention records of holding its faculty, teachers and academics since its incept in 2003. We have officers from merchant navy, ex Indian navy instructors, academic teachers for English and science subject, The teachers are well experienced, hard working and competent to teach their subject. We have around 35 in no masters and engineering officers naval instructors.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Ship Ahoy
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    The institute has made progress by leaps and bounds and ranked as no 1 in northern region of India. Students from almost all India takes training purely as per the requirement of an international shipping. Institute has also conducted the All India Common entrance tests of Board of examination for seafarers, Mumbai for ratings and cadets for Indian maritime university with a capacity of around 800 students in a shift in the early beginning of IMU.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- About Content  Ends-->
+
+<!-- About Section Ends --> <!-- Footer   -->
+
+ <div class="footer__section">
+     <div class="footer__container">
+         <div class="footer__column__one footer__column">
+             <a href="chairman_message.htm">Chairman's Message</a>
+             <a href="directors_message.htm">Director's Message </a>
+             <a href="refund_policy.htm">Refund Policy</a>
+             <!-- <a href="javascript:void(0);">Faculty Profile</a> -->
+         </div>
+
+         <div class="footer__column__two footer__column">
+             <a href="privacy_policy.htm">Privacy Policy</a>
+             <a href="terms_and_conditions.htm"> Terms and Conditions</a>
+             <a href="contact_us.htm">Submit Feedback</a>
+             <a href="javascript:void(0);">Student Corner</a>
+         </div>
+
+         <div class="footer__column__three">
+             <h6>Connect With Us</h6>
+             <div class="footer__social">
+                 <a href="https://www.facebook.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-facebook fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-twitter-square fa-2x"></i></a>
+                 <a href="https://www.instagram.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-instagram fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-youtube fa-2x"></i></a>
+             </div>
+         </div>
+
+         <div class="footer__column__four footer__column">
+             <div class="footer__address">
+                 <p class="text-head">Address:</p>
+                 <p>Village Bamnoli, Sector 28, Dwarka,</p>
+                 <p>Near Dwarka Sector 21 Metro Station,</p>
+                 <p> New Delhi - 110077</p>
+             </div>
+             <div class="footer__contact">
+                 <p class="text-head">Mobile:</p>
+                 <a href="tel:9911486060">+91-9911486060</a>
+             </div>
+
+             <div class="footer__mail">
+                 <p class="text-head">Email:</p>
+                 <a href="mailto:coursebooking@simsnd.in">coursebooking@simsnd.in</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="copy__right__section">
+     <div class="copy__right__container">
+         <p>Copyright © 2023 SIMSND. All Rights Reserved</p>
+         <a href="https://brandremaster.com/" target="_blank" rel="dofollow" style="color:#012447 !important;">Design By Brand Remaster</a>
+         <div class="visitor__container">
+             <p>Total Visitors: <span id="visitor_count">1421886</span></p>
+         </div>
+     </div>
+ </div>
+ <!-- Footer Ends  -->
+ </div>
+ <!-- Third Party Scripts -->
+
+ <script src="assets/js/third_party/jquery.min.js"></script>
+ <script src="assets/js/third_party/popper.min.js"></script>
+ <script src="assets/js/third_party/bootstrap.min.js"></script>
+ <script src="assets/js/third_party/sweetalert.min.js"></script>
+ <script src="assets/js/third_party/slick.min.js"></script>
+ <script src="assets/js/third_party/jquery.dataTables.min.js"></script>
+ <script src="assets/fontawesome/js/all.js"></script>
+ <script src="assets/lightgallery/js/lightgallery.min.js"></script>
+ <script src="assets/lightgallery/js/lg-fullscreen.min.js"></script>
+ <script src="assets/lightgallery/js/lg-hash.min.js"></script>
+ <script src="assets/lightgallery/js/lg-pager.min.js"></script>
+ <script src="assets/lightgallery/js/lg-thumbnail.min.js"></script>
+ <script src="assets/lightgallery/js/lg-video.min.js"></script>
+ <script src="assets/lightgallery/js/lg-zoom.min.js"></script>
+ <script src="http://www.simsnd.in/assets/js/main.js"></script>
+ </body>
+
+ </html>

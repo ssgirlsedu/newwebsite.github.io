@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRIRAM INSTITUTE OF MARINE STUDIES</title>
+    <link rel="icon" href="assets/images/brand/favicon.png" type="image/*" />
+
+    <!-- Third party css  -->
+    <link rel="stylesheet" href="assets/css/third_party/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/sweetalert.css" />
+    <link rel="stylesheet" href="assets/css/third_party/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.min.css" />
+    <!-- custom Css  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+    <script type="text/javascript">
+        var base_url = 'http://www.simsnd.in/';
+        var csrf_test_name = 'csrf_test_name';
+        var csrf_hash = '3eb79d89ffc0bf55ec3c2c0ea2a678a3';
+    </script>
+</head>
+
+<body>
+    <!-- loader  -->
+    <div id="loader"></div>
+    <!-- loader Ends -->
+
+    <div class="main__container">  <!-- Header  -->
+  <header class="header__section">
+      <div class="header__container">
+          <a href="www_simsnd_default.html" class="brand__container">
+              <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+          </a>
+          <div class="navigatiom_button">
+              <a href="onlineclasses.htm" target="_blank" class="main__link">Online Classes</a>
+              <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink ">Book Now</a>
+          </div>
+          <!-- <div class="brand__information__container">
+              <h5>Contact Us</h5>
+              <div class="contact__containers">
+                  <div class="call_container">
+                      <p><b>Course Booking:</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9911380070" class="connection__links">+91-99113-80070</a>
+                          <a href="tel:9911486060" class="connection__links ml-2"> +91-99114-86060</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Accounts :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990250070" class="connection__links">+91-99902-50070</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Helpline IMS Portal :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990565959" class="connection__links">+91-99905-65959</a>
+                      </div>
+                  </div> -->
+          <!-- <a href="mailto:coursebooking@simsnd.in" class="connection__links">coursebooking@simsnd.in</a> -->
+          <!-- </div> -->
+      </div>
+      </div>
+
+      <div class="mobile__header">
+          <div class="mobile_nav">
+              <a class="mobile__brand" href="www_simsnd_default.html">
+                  <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+              </a>
+              <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <nav class="navigation__section">
+      <div class="navigation__container">
+          <a href="www_simsnd_default.html">Home</a>
+          <a href="about.htm">About Us</a>
+          <a href="campus.htm">Campus</a>
+          <div class="drop__down__menu">
+              <a href="javascript:void(0)" class="on_mobile_disabled">Courses <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown__container">
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Pre Sea Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="pre_sea_dns_course.htm">Pre Sea DNS</a>
+                          <a href="pre_sea_gpr_course.htm">Pre Sea GP Rating</a>
+                      </div>
+
+                  </div>
+                  <a href="basic_saftey_course.htm">Basic Saftey Courses</a>
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Special Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="stsdsd.htm">STSDSD</a>
+                          <a href="basic_training_oil_and_tanker_october.htm">Basic Training Oil & Tanker October</a>
+                          <a href="passenger_ship_familiarization.htm"> Passenger Ship Familiarization</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Advanced STCW Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                          <a href="pscrb.htm">PSCRB</a>
+                          <a href="medical_first_aid_course.htm">Medical First aid Course</a>
+                          <a href="ship_security_officer.htm">Ship Security Officer</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Simulator Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="radar_observer.htm">Radar Observer</a>
+                          <a href="auto_radar_plotting_aids.htm">Auto Radar Plotting Aids</a>
+                          <a href="radar_navigation_simulator_course.htm">Radar Navigation Simulator Course</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Refresher Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="personal_survival_technique.htm">Personal Survival Technique</a>
+                          <a href="personal_saftey_and_social_responsibility.htm">Personal Safety & Social Responsibility</a>
+                          <a href="refresher_advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                      </div>
+
+                  </div>
+
+
+                  <a href="pre_sea_dns_course.htm" class=" course_menu_sub">Pre Sea DNS</a>
+                  <a href="pre_sea_gpr_course.htm" class=" course_menu_sub">Pre Sea GP Rating</a>
+
+                  <a href="stsdsd.htm"  class=" course_menu_sub">STSDSD</a>
+                  <a href="basic_training_oil_and_tanker_october.htm" class=" course_menu_sub">Basic Training Oil & Tanker October</a>
+                  <a href="passenger_ship_familiarization.htm" class=" course_menu_sub"> Passenger Ship Familiarization</a>
+
+                  <a href="advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+                  <a href="pscrb.htm"  class=" course_menu_sub">PSCRB</a>
+                  <a href="medical_first_aid_course.htm" class=" course_menu_sub">Medical First aid Course</a>
+                  <a href="ship_security_officer.htm" class=" course_menu_sub">Ship Security Officer</a>
+
+                  <a href="radar_observer.htm" class=" course_menu_sub">Radar Observer</a>
+                  <a href="auto_radar_plotting_aids.htm" class=" course_menu_sub">Auto Radar Plotting Aids</a>
+                  <a href="radar_navigation_simulator_course.htm" class=" course_menu_sub">Radar Navigation Simulator Course</a>
+
+                  <a href="personal_survival_technique.htm" class=" course_menu_sub">Personal Survival Technique</a>
+                  <a href="personal_saftey_and_social_responsibility.htm" class=" course_menu_sub">Personal Safety & Social Responsibility</a>
+                  <a href="refresher_advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+
+              </div>
+          </div>
+          <a href="admission_notice.htm">Admission</a>
+          <a href="results.htm">Results</a>
+          <a href="alumni.htm">Alumni</a>
+          <a href="events.htm">Events</a>
+          <a href="faculties.htm">Faculties</a>
+          <a href="rising_star.htm">Rising Stars</a>
+
+          <!-- <a href="placements">Placements</a> -->
+          <a href="contact_us.htm">Contact Us</a>
+          <a href="archive.htm">Archive</a>
+          <a href="onlineclasses.htm" target="_blank" class="main__link mobile_class">Online Classes</a>
+          <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink mobile_class">Book Now</a>
+      </div>
+  </nav>
+
+  <!-- Header Ends --><!-- Page banner  -->
+<!-- <div class="page__banner__section">
+        <div class="page__banner">
+            <img src="assets/images/about/about-banner.jpg" alt="About banner" />
+                        </div>
+                    </div> -->
+
+<!-- Admission Content  -->
+
+<div class="admission__notice__section">
+    <div class="admission__notice__container">
+        <h3>Archive</h3>
+
+        <div class="admission__notice__info">
+            <div class="table-responsive">
+                <table id="archve_table" class="archve_table table">
+                    <thead class="w-100">
+                        <tr>
+                            <th>Sr. No..</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Published Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                        <tr>
+                                    <td>1</td>
+                                    <td>Student Pre Sea - Leave application form</td>
+                                    <td>Student leave request form sriram</td>
+                                    <td>18-Nov-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/166879034818634646337_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>2</td>
+                                    <td>Leave request form Officers, faculty staff Instructor</td>
+                                    <td>Leave request form faculty</td>
+                                    <td>18-Nov-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/16687901199830569456_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>3</td>
+                                    <td>Work permit Mast climbing</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722960251336431306_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>4</td>
+                                    <td>Work ppermit Hot work</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722959054684486311_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>5</td>
+                                    <td>Well ness cert Pre sea</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722957230181836887_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>6</td>
+                                    <td>Student outgoing</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722955842317312546_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>7</td>
+                                    <td>Student Leave request</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722954326879928243_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>8</td>
+                                    <td>SMS</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722953045742759700_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>9</td>
+                                    <td>Permit to carry out practical training by engineering department FF group</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722952074287249767_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>10</td>
+                                    <td>No Dues certificate Student</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722948863195845677_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>11</td>
+                                    <td>NC Report for internal audit</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722947157064070177_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>12</td>
+                                    <td>Isolation form</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722945438231454894_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>13</td>
+                                    <td>Inventory page</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/16472294399891597111_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>14</td>
+                                    <td>Leave request fcaulty staff and admin</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/16472294255275932143_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>15</td>
+                                    <td>Check list for practical Training SIMS dated 01.11.2021</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722940830973911082_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>16</td>
+                                    <td>Application Form for Faculty-SMS</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722938762485875558_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>17</td>
+                                    <td>Check list WC-Bathroom daily</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722937537946666291_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>18</td>
+                                    <td>Leave record format-Sriram</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722933910058530811_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>19</td>
+                                    <td>Daily sign ED</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722932441179271458_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>20</td>
+                                    <td>3rd floor check list Wc-bath</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722931191649569718_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>21</td>
+                                    <td>2nd floor check list Wc-bath</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722929822505075865_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>22</td>
+                                    <td>Work permit for rigging of pilot ladder</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722927476238443735_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>23</td>
+                                    <td>KNOW ME FORM Jan 2022 GPR</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722926072729859885_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>24</td>
+                                    <td>Teaching load monthly {fresh}</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/16472292477273387165_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>25</td>
+                                    <td>Monthly leave forcast staff</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722922984571377102_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>26</td>
+                                    <td>Allocation of duties clerical staff</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722921011934925115_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>27</td>
+                                    <td>Round report warden format</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722919674339016101_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>28</td>
+                                    <td>1st floor check list Cleanship</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722918061517956241_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>29</td>
+                                    <td>Stuent performance report by internal examiner</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722916638287308416_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>30</td>
+                                    <td>Presea coure incoming form SRM</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722915371257835063_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>31</td>
+                                    <td>GP RE Form latest</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722914290857171502_archive.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>32</td>
+                                    <td>Outgoinf staff</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/16472291293968426704_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>33</td>
+                                    <td>Sample appointment letter Consultant</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722911265655463146_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>34</td>
+                                    <td>Outgoing</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722909972522241085_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>35</td>
+                                    <td>Application Form for Visiting Faculty-converted</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722908593893058746_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>36</td>
+                                    <td>Affidavit by staff</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722907335055836219_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>37</td>
+                                    <td>Term and condition part B</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722906115501025075_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>38</td>
+                                    <td>Document receiept students</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722904325912282182_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>39</td>
+                                    <td>Wellness Post sea courses.</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722901922597034463_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>40</td>
+                                    <td>Proforma faculty deployment</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722900679638582515_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>41</td>
+                                    <td>Satff admin application</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722898934127109242_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>42</td>
+                                    <td>faculty consent-sriram</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722897040469890492_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>43</td>
+                                    <td>Consent Form</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722895996099455695_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>44</td>
+                                    <td>Cert requisition form sriram</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/16472289399198189003_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>45</td>
+                                    <td>Faculty load format Weekly</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722892599002204150_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>46</td>
+                                    <td>Trg coord- checklist</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722884934091891678_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>47</td>
+                                    <td>Performa faculty  course allotment</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722883620153078215_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>48</td>
+                                    <td>Payment Schedule Aug 2021</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722881694023607269_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>49</td>
+                                    <td>Student Peg Form</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722877751258211662_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <td>50</td>
+                                    <td>Undertaking on exit exam dgs</td>
+                                    <td>.</td>
+                                    <td>14-Mar-2022</td>
+                                    <td>
+                                        <a href="assets/admin/archive/164722872880087634353_archive.docx" class="btn btn-primary" target="_blank"><i class="fas fa-print"></i> Download</a>
+                                    </td>
+                                </tr>
+                                                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Admission Content  Ends--> <!-- Footer   -->
+
+ <div class="footer__section">
+     <div class="footer__container">
+         <div class="footer__column__one footer__column">
+             <a href="chairman_message.htm">Chairman's Message</a>
+             <a href="directors_message.htm">Director's Message </a>
+             <a href="refund_policy.htm">Refund Policy</a>
+             <!-- <a href="javascript:void(0);">Faculty Profile</a> -->
+         </div>
+
+         <div class="footer__column__two footer__column">
+             <a href="privacy_policy.htm">Privacy Policy</a>
+             <a href="terms_and_conditions.htm"> Terms and Conditions</a>
+             <a href="contact_us.htm">Submit Feedback</a>
+             <a href="javascript:void(0);">Student Corner</a>
+         </div>
+
+         <div class="footer__column__three">
+             <h6>Connect With Us</h6>
+             <div class="footer__social">
+                 <a href="https://www.facebook.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-facebook fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-twitter-square fa-2x"></i></a>
+                 <a href="https://www.instagram.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-instagram fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-youtube fa-2x"></i></a>
+             </div>
+         </div>
+
+         <div class="footer__column__four footer__column">
+             <div class="footer__address">
+                 <p class="text-head">Address:</p>
+                 <p>Village Bamnoli, Sector 28, Dwarka,</p>
+                 <p>Near Dwarka Sector 21 Metro Station,</p>
+                 <p> New Delhi - 110077</p>
+             </div>
+             <div class="footer__contact">
+                 <p class="text-head">Mobile:</p>
+                 <a href="tel:9911486060">+91-9911486060</a>
+             </div>
+
+             <div class="footer__mail">
+                 <p class="text-head">Email:</p>
+                 <a href="mailto:coursebooking@simsnd.in">coursebooking@simsnd.in</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="copy__right__section">
+     <div class="copy__right__container">
+         <p>Copyright © 2023 SIMSND. All Rights Reserved</p>
+         <a href="https://brandremaster.com/" target="_blank" rel="dofollow" style="color:#012447 !important;">Design By Brand Remaster</a>
+         <div class="visitor__container">
+             <p>Total Visitors: <span id="visitor_count">1421886</span></p>
+         </div>
+     </div>
+ </div>
+ <!-- Footer Ends  -->
+ </div>
+ <!-- Third Party Scripts -->
+
+ <script src="assets/js/third_party/jquery.min.js"></script>
+ <script src="assets/js/third_party/popper.min.js"></script>
+ <script src="assets/js/third_party/bootstrap.min.js"></script>
+ <script src="assets/js/third_party/sweetalert.min.js"></script>
+ <script src="assets/js/third_party/slick.min.js"></script>
+ <script src="assets/js/third_party/jquery.dataTables.min.js"></script>
+ <script src="assets/fontawesome/js/all.js"></script>
+ <script src="assets/lightgallery/js/lightgallery.min.js"></script>
+ <script src="assets/lightgallery/js/lg-fullscreen.min.js"></script>
+ <script src="assets/lightgallery/js/lg-hash.min.js"></script>
+ <script src="assets/lightgallery/js/lg-pager.min.js"></script>
+ <script src="assets/lightgallery/js/lg-thumbnail.min.js"></script>
+ <script src="assets/lightgallery/js/lg-video.min.js"></script>
+ <script src="assets/lightgallery/js/lg-zoom.min.js"></script>
+ <script src="http://www.simsnd.in/assets/js/main.js"></script>
+ </body>
+
+ </html>

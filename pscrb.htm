@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRIRAM INSTITUTE OF MARINE STUDIES</title>
+    <link rel="icon" href="assets/images/brand/favicon.png" type="image/*" />
+
+    <!-- Third party css  -->
+    <link rel="stylesheet" href="assets/css/third_party/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/sweetalert.css" />
+    <link rel="stylesheet" href="assets/css/third_party/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.min.css" />
+    <!-- custom Css  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+    <script type="text/javascript">
+        var base_url = 'http://www.simsnd.in/';
+        var csrf_test_name = 'csrf_test_name';
+        var csrf_hash = '3eb79d89ffc0bf55ec3c2c0ea2a678a3';
+    </script>
+</head>
+
+<body>
+    <!-- loader  -->
+    <div id="loader"></div>
+    <!-- loader Ends -->
+
+    <div class="main__container">  <!-- Header  -->
+  <header class="header__section">
+      <div class="header__container">
+          <a href="www_simsnd_default.html" class="brand__container">
+              <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+          </a>
+          <div class="navigatiom_button">
+              <a href="onlineclasses.htm" target="_blank" class="main__link">Online Classes</a>
+              <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink ">Book Now</a>
+          </div>
+          <!-- <div class="brand__information__container">
+              <h5>Contact Us</h5>
+              <div class="contact__containers">
+                  <div class="call_container">
+                      <p><b>Course Booking:</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9911380070" class="connection__links">+91-99113-80070</a>
+                          <a href="tel:9911486060" class="connection__links ml-2"> +91-99114-86060</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Accounts :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990250070" class="connection__links">+91-99902-50070</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Helpline IMS Portal :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990565959" class="connection__links">+91-99905-65959</a>
+                      </div>
+                  </div> -->
+          <!-- <a href="mailto:coursebooking@simsnd.in" class="connection__links">coursebooking@simsnd.in</a> -->
+          <!-- </div> -->
+      </div>
+      </div>
+
+      <div class="mobile__header">
+          <div class="mobile_nav">
+              <a class="mobile__brand" href="www_simsnd_default.html">
+                  <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+              </a>
+              <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <nav class="navigation__section">
+      <div class="navigation__container">
+          <a href="www_simsnd_default.html">Home</a>
+          <a href="about.htm">About Us</a>
+          <a href="campus.htm">Campus</a>
+          <div class="drop__down__menu">
+              <a href="javascript:void(0)" class="on_mobile_disabled">Courses <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown__container">
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Pre Sea Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="pre_sea_dns_course.htm">Pre Sea DNS</a>
+                          <a href="pre_sea_gpr_course.htm">Pre Sea GP Rating</a>
+                      </div>
+
+                  </div>
+                  <a href="basic_saftey_course.htm">Basic Saftey Courses</a>
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Special Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="stsdsd.htm">STSDSD</a>
+                          <a href="basic_training_oil_and_tanker_october.htm">Basic Training Oil & Tanker October</a>
+                          <a href="passenger_ship_familiarization.htm"> Passenger Ship Familiarization</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Advanced STCW Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                          <a href="pscrb.htm">PSCRB</a>
+                          <a href="medical_first_aid_course.htm">Medical First aid Course</a>
+                          <a href="ship_security_officer.htm">Ship Security Officer</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Simulator Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="radar_observer.htm">Radar Observer</a>
+                          <a href="auto_radar_plotting_aids.htm">Auto Radar Plotting Aids</a>
+                          <a href="radar_navigation_simulator_course.htm">Radar Navigation Simulator Course</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Refresher Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="personal_survival_technique.htm">Personal Survival Technique</a>
+                          <a href="personal_saftey_and_social_responsibility.htm">Personal Safety & Social Responsibility</a>
+                          <a href="refresher_advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                      </div>
+
+                  </div>
+
+
+                  <a href="pre_sea_dns_course.htm" class=" course_menu_sub">Pre Sea DNS</a>
+                  <a href="pre_sea_gpr_course.htm" class=" course_menu_sub">Pre Sea GP Rating</a>
+
+                  <a href="stsdsd.htm"  class=" course_menu_sub">STSDSD</a>
+                  <a href="basic_training_oil_and_tanker_october.htm" class=" course_menu_sub">Basic Training Oil & Tanker October</a>
+                  <a href="passenger_ship_familiarization.htm" class=" course_menu_sub"> Passenger Ship Familiarization</a>
+
+                  <a href="advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+                  <a href="pscrb.htm"  class=" course_menu_sub">PSCRB</a>
+                  <a href="medical_first_aid_course.htm" class=" course_menu_sub">Medical First aid Course</a>
+                  <a href="ship_security_officer.htm" class=" course_menu_sub">Ship Security Officer</a>
+
+                  <a href="radar_observer.htm" class=" course_menu_sub">Radar Observer</a>
+                  <a href="auto_radar_plotting_aids.htm" class=" course_menu_sub">Auto Radar Plotting Aids</a>
+                  <a href="radar_navigation_simulator_course.htm" class=" course_menu_sub">Radar Navigation Simulator Course</a>
+
+                  <a href="personal_survival_technique.htm" class=" course_menu_sub">Personal Survival Technique</a>
+                  <a href="personal_saftey_and_social_responsibility.htm" class=" course_menu_sub">Personal Safety & Social Responsibility</a>
+                  <a href="refresher_advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+
+              </div>
+          </div>
+          <a href="admission_notice.htm">Admission</a>
+          <a href="results.htm">Results</a>
+          <a href="alumni.htm">Alumni</a>
+          <a href="events.htm">Events</a>
+          <a href="faculties.htm">Faculties</a>
+          <a href="rising_star.htm">Rising Stars</a>
+
+          <!-- <a href="placements">Placements</a> -->
+          <a href="contact_us.htm">Contact Us</a>
+          <a href="archive.htm">Archive</a>
+          <a href="onlineclasses.htm" target="_blank" class="main__link mobile_class">Online Classes</a>
+          <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink mobile_class">Book Now</a>
+      </div>
+  </nav>
+
+  <!-- Header Ends --><!-- Page banner  -->
+<div class="page__banner__section">
+    <div class="page__banner">
+        <img src="assets/images/about/about-banner.jpg" alt="About banner" />
+    </div>
+</div>
+
+<!-- Courses Content  -->
+
+<div class="course__details__section">
+    <div class="course__details__container">
+        <div class="course__heading">
+            <h2>PSCRB</h2>
+            <p>Eligibility to attend PSCRB Course.</p>
+        </div>
+        <!-- Details of Couse  -->
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Documents
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>(a)INDoS No</p>
+                <p>(b)Has attended Personal Survival Tech {PST} course in a DGS approved institute in India</p>
+                <p>(c)Recent Medical fitness certificate by a DGS approved doctor.</p>
+                <p>(d)Sea service requirement: 12 month Sea service with no pre Sea and 06 month sea services for Pre Sea Course students.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Course fees
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>INR 8,000/- (Eight thousand only) to be paid in full at the time of booking </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    E Learning
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>Students to complete E learning Module of the DGS and its assessment before attend the course. Ensure the E governance of the DGS recognize your face. </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Course duration
+                </h3>
+            </div>
+            <div class="card-body">
+                <p> 05 Days.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Recognition of Photo & signature in Seaman Profile:
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>Individuals are hereby strictly check that their photo and signatures are verified while attending E learning and its module. Institute does not have any access to this module for your assistance</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Conduct of Classes:</h3>
+            </div>
+            <div class="card-body">
+                <p>As of Now Online, Practical are done in institute campus.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Online Exit examination</h3>
+            </div>
+            <div class="card-body">
+                <p>On completion of online classes, students shall to appear/ Practical training and on attending Practical training one shall be permitted to attend Online Exit Examination of the DGS and course completion certificate is issued to successful students of Exit Exam only.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Re-Sits</h3>
+            </div>
+            <div class="card-body">
+                <p>Re-Sits are permitted against a course by the DGS. The institute pays fees INR 295 only for the very 1<sup>st</sup> attempt. Unsuccessful/failed students to pay for further attempt. Incase student does not pass online exit exam, he is re attend the full course at fresh fees.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Refunds:</h3>
+            </div>
+            <div class="card-body">
+                <p> for refunds of course fees kindly visit our website> home page>refund policy <span class="text-danger">The theory portion of course syllabus shall be conducted online mode and practical at institute campus commencing from 05.04.2021.The course certificate shall be issued online only on receipt of completion report of E learning, its assessment and successful in Online Exit Examination.Classes shall commence from 0930 hrs and meeting room shall be opened 05 minutes before. You are requested to log in our portal on goggle</span>: <a href="https://sims.marineims.com/student">sims.marineims.com/student</a>
+                </p>
+                <p>(a)Course fees is to be paid through payment gateway. In case of any mistake/over/underpayment, contact Account department. Accounts cum tech issues (Help Desk):-:+91-09990250070</p>
+                <p>(b)Booking Team Contact No:- +91-9911486060, +91-9911380070</p>
+                <p>(c)Booking Team E-mail : coursebooking@simsnd.in</p>
+                <p>(d)Practical Training: + 91-999565959 E mail: trgcoord@simsnd.in</p>
+            </div>
+        </div>
+
+        <div class="course__apply__now__container">
+            <a href="apply_now.htm" target="_blank" class="apply__now__button">Apply now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Courses Content Ends --> <!-- Footer   -->
+
+ <div class="footer__section">
+     <div class="footer__container">
+         <div class="footer__column__one footer__column">
+             <a href="chairman_message.htm">Chairman's Message</a>
+             <a href="directors_message.htm">Director's Message </a>
+             <a href="refund_policy.htm">Refund Policy</a>
+             <!-- <a href="javascript:void(0);">Faculty Profile</a> -->
+         </div>
+
+         <div class="footer__column__two footer__column">
+             <a href="privacy_policy.htm">Privacy Policy</a>
+             <a href="terms_and_conditions.htm"> Terms and Conditions</a>
+             <a href="contact_us.htm">Submit Feedback</a>
+             <a href="javascript:void(0);">Student Corner</a>
+         </div>
+
+         <div class="footer__column__three">
+             <h6>Connect With Us</h6>
+             <div class="footer__social">
+                 <a href="https://www.facebook.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-facebook fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-twitter-square fa-2x"></i></a>
+                 <a href="https://www.instagram.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-instagram fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-youtube fa-2x"></i></a>
+             </div>
+         </div>
+
+         <div class="footer__column__four footer__column">
+             <div class="footer__address">
+                 <p class="text-head">Address:</p>
+                 <p>Village Bamnoli, Sector 28, Dwarka,</p>
+                 <p>Near Dwarka Sector 21 Metro Station,</p>
+                 <p> New Delhi - 110077</p>
+             </div>
+             <div class="footer__contact">
+                 <p class="text-head">Mobile:</p>
+                 <a href="tel:9911486060">+91-9911486060</a>
+             </div>
+
+             <div class="footer__mail">
+                 <p class="text-head">Email:</p>
+                 <a href="mailto:coursebooking@simsnd.in">coursebooking@simsnd.in</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="copy__right__section">
+     <div class="copy__right__container">
+         <p>Copyright © 2023 SIMSND. All Rights Reserved</p>
+         <a href="https://brandremaster.com/" target="_blank" rel="dofollow" style="color:#012447 !important;">Design By Brand Remaster</a>
+         <div class="visitor__container">
+             <p>Total Visitors: <span id="visitor_count">1421886</span></p>
+         </div>
+     </div>
+ </div>
+ <!-- Footer Ends  -->
+ </div>
+ <!-- Third Party Scripts -->
+
+ <script src="assets/js/third_party/jquery.min.js"></script>
+ <script src="assets/js/third_party/popper.min.js"></script>
+ <script src="assets/js/third_party/bootstrap.min.js"></script>
+ <script src="assets/js/third_party/sweetalert.min.js"></script>
+ <script src="assets/js/third_party/slick.min.js"></script>
+ <script src="assets/js/third_party/jquery.dataTables.min.js"></script>
+ <script src="assets/fontawesome/js/all.js"></script>
+ <script src="assets/lightgallery/js/lightgallery.min.js"></script>
+ <script src="assets/lightgallery/js/lg-fullscreen.min.js"></script>
+ <script src="assets/lightgallery/js/lg-hash.min.js"></script>
+ <script src="assets/lightgallery/js/lg-pager.min.js"></script>
+ <script src="assets/lightgallery/js/lg-thumbnail.min.js"></script>
+ <script src="assets/lightgallery/js/lg-video.min.js"></script>
+ <script src="assets/lightgallery/js/lg-zoom.min.js"></script>
+ <script src="http://www.simsnd.in/assets/js/main.js"></script>
+ </body>
+
+ </html>

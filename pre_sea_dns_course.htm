@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRIRAM INSTITUTE OF MARINE STUDIES</title>
+    <link rel="icon" href="assets/images/brand/favicon.png" type="image/*" />
+
+    <!-- Third party css  -->
+    <link rel="stylesheet" href="assets/css/third_party/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/third_party/sweetalert.css" />
+    <link rel="stylesheet" href="assets/css/third_party/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.min.css" />
+    <!-- custom Css  -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+    <script type="text/javascript">
+        var base_url = 'http://www.simsnd.in/';
+        var csrf_test_name = 'csrf_test_name';
+        var csrf_hash = '3eb79d89ffc0bf55ec3c2c0ea2a678a3';
+    </script>
+</head>
+
+<body>
+    <!-- loader  -->
+    <div id="loader"></div>
+    <!-- loader Ends -->
+
+    <div class="main__container">  <!-- Header  -->
+  <header class="header__section">
+      <div class="header__container">
+          <a href="www_simsnd_default.html" class="brand__container">
+              <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+          </a>
+          <div class="navigatiom_button">
+              <a href="onlineclasses.htm" target="_blank" class="main__link">Online Classes</a>
+              <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink ">Book Now</a>
+          </div>
+          <!-- <div class="brand__information__container">
+              <h5>Contact Us</h5>
+              <div class="contact__containers">
+                  <div class="call_container">
+                      <p><b>Course Booking:</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9911380070" class="connection__links">+91-99113-80070</a>
+                          <a href="tel:9911486060" class="connection__links ml-2"> +91-99114-86060</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Accounts :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990250070" class="connection__links">+91-99902-50070</a>
+                      </div>
+                  </div>
+                  <div class="call_container">
+                      <p><b>Helpline IMS Portal :</b> </p>
+                      <div class="numbers">
+                          <a href="tel:9990565959" class="connection__links">+91-99905-65959</a>
+                      </div>
+                  </div> -->
+          <!-- <a href="mailto:coursebooking@simsnd.in" class="connection__links">coursebooking@simsnd.in</a> -->
+          <!-- </div> -->
+      </div>
+      </div>
+
+      <div class="mobile__header">
+          <div class="mobile_nav">
+              <a class="mobile__brand" href="www_simsnd_default.html">
+                  <img src="assets/images/brand/logo.png" alt="Brand Logo" />
+              </a>
+              <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <nav class="navigation__section">
+      <div class="navigation__container">
+          <a href="www_simsnd_default.html">Home</a>
+          <a href="about.htm">About Us</a>
+          <a href="campus.htm">Campus</a>
+          <div class="drop__down__menu">
+              <a href="javascript:void(0)" class="on_mobile_disabled">Courses <i class="fas fa-angle-down"></i></a>
+              <div class="dropdown__container">
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Pre Sea Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="pre_sea_dns_course.htm">Pre Sea DNS</a>
+                          <a href="pre_sea_gpr_course.htm">Pre Sea GP Rating</a>
+                      </div>
+
+                  </div>
+                  <a href="basic_saftey_course.htm">Basic Saftey Courses</a>
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Special Courses
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="stsdsd.htm">STSDSD</a>
+                          <a href="basic_training_oil_and_tanker_october.htm">Basic Training Oil & Tanker October</a>
+                          <a href="passenger_ship_familiarization.htm"> Passenger Ship Familiarization</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Advanced STCW Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                          <a href="pscrb.htm">PSCRB</a>
+                          <a href="medical_first_aid_course.htm">Medical First aid Course</a>
+                          <a href="ship_security_officer.htm">Ship Security Officer</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Simulator Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="radar_observer.htm">Radar Observer</a>
+                          <a href="auto_radar_plotting_aids.htm">Auto Radar Plotting Aids</a>
+                          <a href="radar_navigation_simulator_course.htm">Radar Navigation Simulator Course</a>
+                      </div>
+
+                  </div>
+
+                  <div class="sub_drop_down_menu">
+                      <a href="javascript:void(0)" class="hide_menu">Refresher Course
+                          <i class="fas fa-angle-right"></i>
+                      </a>
+                      <div class="sub_drop_down">
+                          <a href="personal_survival_technique.htm">Personal Survival Technique</a>
+                          <a href="personal_saftey_and_social_responsibility.htm">Personal Safety & Social Responsibility</a>
+                          <a href="refresher_advanced_fire_fighting_course.htm">Advance Fire Fighting Course</a>
+                      </div>
+
+                  </div>
+
+
+                  <a href="pre_sea_dns_course.htm" class=" course_menu_sub">Pre Sea DNS</a>
+                  <a href="pre_sea_gpr_course.htm" class=" course_menu_sub">Pre Sea GP Rating</a>
+
+                  <a href="stsdsd.htm"  class=" course_menu_sub">STSDSD</a>
+                  <a href="basic_training_oil_and_tanker_october.htm" class=" course_menu_sub">Basic Training Oil & Tanker October</a>
+                  <a href="passenger_ship_familiarization.htm" class=" course_menu_sub"> Passenger Ship Familiarization</a>
+
+                  <a href="advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+                  <a href="pscrb.htm"  class=" course_menu_sub">PSCRB</a>
+                  <a href="medical_first_aid_course.htm" class=" course_menu_sub">Medical First aid Course</a>
+                  <a href="ship_security_officer.htm" class=" course_menu_sub">Ship Security Officer</a>
+
+                  <a href="radar_observer.htm" class=" course_menu_sub">Radar Observer</a>
+                  <a href="auto_radar_plotting_aids.htm" class=" course_menu_sub">Auto Radar Plotting Aids</a>
+                  <a href="radar_navigation_simulator_course.htm" class=" course_menu_sub">Radar Navigation Simulator Course</a>
+
+                  <a href="personal_survival_technique.htm" class=" course_menu_sub">Personal Survival Technique</a>
+                  <a href="personal_saftey_and_social_responsibility.htm" class=" course_menu_sub">Personal Safety & Social Responsibility</a>
+                  <a href="refresher_advanced_fire_fighting_course.htm" class=" course_menu_sub">Advance Fire Fighting Course</a>
+
+              </div>
+          </div>
+          <a href="admission_notice.htm">Admission</a>
+          <a href="results.htm">Results</a>
+          <a href="alumni.htm">Alumni</a>
+          <a href="events.htm">Events</a>
+          <a href="faculties.htm">Faculties</a>
+          <a href="rising_star.htm">Rising Stars</a>
+
+          <!-- <a href="placements">Placements</a> -->
+          <a href="contact_us.htm">Contact Us</a>
+          <a href="archive.htm">Archive</a>
+          <a href="onlineclasses.htm" target="_blank" class="main__link mobile_class">Online Classes</a>
+          <a href="http://sims.marineims.com/register" target="_blank" class="book__now blink mobile_class">Book Now</a>
+      </div>
+  </nav>
+
+  <!-- Header Ends --><!-- Page banner  -->
+<div class="page__banner__section">
+    <div class="page__banner">
+        <img src="assets/images/about/about-banner.jpg" alt="About banner" />
+    </div>
+</div>
+
+<!-- Courses Content  -->
+
+<div class="course__details__section">
+    <div class="course__details__container">
+        <div class="course__heading">
+            <h2>Pre Sea DNS</h2>
+        </div>
+        <!-- Details of Couse  -->
+        <div class="card">
+            <div class="card-header">
+                <h3>
+                    Information on DNS Course 01.08.2021 – Sriram Institute of Marine Studies
+                </h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    Institute shall commence the DNS Course with an intake of 40 cadets from 01.08.2022. The course is approved by the DG Shipping and affiliated to the Indian Maritime University. {IMU} Chennai.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Course Intake</h3>
+            </div>
+            <div class="card-body">
+                <p>40 students</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Course scheduled from </h3>
+            </div>
+            <div class="card-body">
+                <p>01.08.2022</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Duration of course</h3>
+            </div>
+            <div class="card-body">
+                <p>First 02 semester at institute campus, 03 semester on board</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Eligibility criteria to attend the course</h3>
+            </div>
+            <div class="card-body">
+                <p>(a) Pass class 10+2 or its equalling from a recognised board by the Central Govt. of India or state Govt./NIOS with 50% marks in English.</p>
+                <p>(b) have minimum 60% in aggregate of Physics, Chemistry and Maths aggregate in class 12 (10+2) </p>
+                <p>(c ) BSc Students have 50% in BSc course and Physics be one of the subject in any year.</p>
+                <p>(d) Relaxation in marks PCM; 05% relaxation to the students falls under SC/ST category. The certificate shall be required at the time of counselling. </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Age limit</h3>
+            </div>
+            <div class="card-body">
+                <p>Minimum 17 years and maximum 25 years as on the date course commences</p>
+                <p>(Age relaxation as per existing rules of Govt. of India)</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Medical standard</h3>
+            </div>
+            <div class="card-body">
+                <p>Both eyes 6/6 with no aids and no colour blindness, no deformity in body, no stemming, No any kind of handicapped is accepted in course.Fit for sea service</p>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Requirement of passport</h3>
+            </div>
+            <div class="card-body">
+                <p>Able to present passport with in 10 days of commencement of course for process of INDoS application and batch details.</p>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Adhaar card</h3>
+            </div>
+            <div class="card-body">
+                <p>students to submit coloured scan copy of their Adhaar card for admission.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>EWS/Category certificate</h3>
+            </div>
+            <div class="card-body">
+                <p> Student seeking any reservation as EWS/SC/ST/OBC etc. are to obtain a fresh certificate from the Govt. authorities and shall deposit in campus at the time of admission/counselling for course in institute.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Course fees</h3>
+            </div>
+            <div class="card-body">
+                <p> (a) IMU Counselling and Programme fees : INR 35,000 {To be paid on passing Online IMU CET only
+                </p>
+                <p> (a) First Semester Fees: 1,55,000/- (To be paid on commencement/ entry in Institute)</p>
+                <p>(b) Second semester fees : 1,55,000/ 2nd semester by 15.02.2022</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Security deposit</h3>
+            </div>
+            <div class="card-body">
+                <p> INR 10,000/- (ten thousand only to meet exam fees and laundry charges</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Procedure</h3>
+            </div>
+            <div class="card-body">
+                <p> Indian Maritime University has now announced an Online All India Common Entrance Test. Participant are to register for Online Common Entrance examination and rank card shall be issued based on merit in online test or percentile. The test shall be based on syllabus of 12th standard English, reasoning. maths, chemistry physics etc.</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Requirement of laptop/desk top</h3>
+            </div>
+            <div class="card-body">
+                <p>Preparative classes for IMU CET2021 shall be conducted by our officers on declaration of programme on subject. Dayes shall be announced for CET predation. Ensure you have Desktop or laptop only as the CET cannot be done on mobile. Mock drill on CET shall be conducted.</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Preparative training on CET to registered student</h3>
+            </div>
+            <div class="card-body">
+                <p>The institute shall conduct an Online session to complete CET syllabus through Online mode for registered students from 16.08.2021 to 28.08.2021.</p>
+                <b>Kindly send us your documents on below whats app no for any clarification on eligibility criteria at no cost. 9312271185</b>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Registration for course</h3>
+            </div>
+            <div class="card-body">
+                <p> In addition purely your choice and option, You can register with us for the admission in course, once satisfied with eligibility criteria. The institutes shall organise capsule training on Online Examination CETIMU 2021 for all registered students of 10 days so as to prepare them for Online Examination. A total of INR 20,000/ be submitted in advanced and for the CET rank holder this will be included in the Exam fees. Failures shall be refunded INR 10,000/ only the account details for prospective student for registration are as under:</p>
+                <p><b>Sriram Institute of Marine Studies</b> <br>
+                    HDFC Bank Ltd, Account No 03382320000206<br>
+                    Branch: Village Bamnoli, Sector 28, Dwarka<br>
+                    NEFT/IFSC: HDFC0000338<br>
+                </p>
+                <p><b>Note:</b> All students registered with us and scoring any rank in IMU CET shall be admitted in course in this institute on priority. Others in case if any seat remains vacant shall be allowed.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Schedule of admission:/Important dates:</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table tabl-striped table-bordered w-100">
+                        <tr>
+                            <td>Commencement of registration for CET :</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Last date for CET registration :</td>
+                            <td>Shall be announced by the IMU</td>
+                        </tr>
+                        <tr>
+                            <td>Download hall tickets by candidates :</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Date of CET :</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Sponsorship for course</h3>
+            </div>
+            <div class="card-body">
+                <p> Sponsorship in respect of admitted students shall be sent prior to their admission to IMU as per IMU rules.</p>
+            </div>
+        </div>
+
+        <div class="course__apply__now__container">
+            <a href="apply_now.htm" target="_blank" class="apply__now__button">Apply now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Courses Content Ends --> <!-- Footer   -->
+
+ <div class="footer__section">
+     <div class="footer__container">
+         <div class="footer__column__one footer__column">
+             <a href="chairman_message.htm">Chairman's Message</a>
+             <a href="directors_message.htm">Director's Message </a>
+             <a href="refund_policy.htm">Refund Policy</a>
+             <!-- <a href="javascript:void(0);">Faculty Profile</a> -->
+         </div>
+
+         <div class="footer__column__two footer__column">
+             <a href="privacy_policy.htm">Privacy Policy</a>
+             <a href="terms_and_conditions.htm"> Terms and Conditions</a>
+             <a href="contact_us.htm">Submit Feedback</a>
+             <a href="javascript:void(0);">Student Corner</a>
+         </div>
+
+         <div class="footer__column__three">
+             <h6>Connect With Us</h6>
+             <div class="footer__social">
+                 <a href="https://www.facebook.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-facebook fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-twitter-square fa-2x"></i></a>
+                 <a href="https://www.instagram.com/sriraminstitutemarinestudies/" class="social__links"><i class="fab fa-instagram fa-2x"></i></a>
+                 <a href="javascript:void(0)" class="social__links"><i class="fab fa-youtube fa-2x"></i></a>
+             </div>
+         </div>
+
+         <div class="footer__column__four footer__column">
+             <div class="footer__address">
+                 <p class="text-head">Address:</p>
+                 <p>Village Bamnoli, Sector 28, Dwarka,</p>
+                 <p>Near Dwarka Sector 21 Metro Station,</p>
+                 <p> New Delhi - 110077</p>
+             </div>
+             <div class="footer__contact">
+                 <p class="text-head">Mobile:</p>
+                 <a href="tel:9911486060">+91-9911486060</a>
+             </div>
+
+             <div class="footer__mail">
+                 <p class="text-head">Email:</p>
+                 <a href="mailto:coursebooking@simsnd.in">coursebooking@simsnd.in</a>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="copy__right__section">
+     <div class="copy__right__container">
+         <p>Copyright © 2023 SIMSND. All Rights Reserved</p>
+         <a href="https://brandremaster.com/" target="_blank" rel="dofollow" style="color:#012447 !important;">Design By Brand Remaster</a>
+         <div class="visitor__container">
+             <p>Total Visitors: <span id="visitor_count">1421886</span></p>
+         </div>
+     </div>
+ </div>
+ <!-- Footer Ends  -->
+ </div>
+ <!-- Third Party Scripts -->
+
+ <script src="assets/js/third_party/jquery.min.js"></script>
+ <script src="assets/js/third_party/popper.min.js"></script>
+ <script src="assets/js/third_party/bootstrap.min.js"></script>
+ <script src="assets/js/third_party/sweetalert.min.js"></script>
+ <script src="assets/js/third_party/slick.min.js"></script>
+ <script src="assets/js/third_party/jquery.dataTables.min.js"></script>
+ <script src="assets/fontawesome/js/all.js"></script>
+ <script src="assets/lightgallery/js/lightgallery.min.js"></script>
+ <script src="assets/lightgallery/js/lg-fullscreen.min.js"></script>
+ <script src="assets/lightgallery/js/lg-hash.min.js"></script>
+ <script src="assets/lightgallery/js/lg-pager.min.js"></script>
+ <script src="assets/lightgallery/js/lg-thumbnail.min.js"></script>
+ <script src="assets/lightgallery/js/lg-video.min.js"></script>
+ <script src="assets/lightgallery/js/lg-zoom.min.js"></script>
+ <script src="http://www.simsnd.in/assets/js/main.js"></script>
+ </body>
+
+ </html>

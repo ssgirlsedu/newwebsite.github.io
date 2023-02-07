@@ -14,6 +14,19 @@
 /*********************************
 2. Body and some general stuff
 *********************************/
+@media (max-width:1200px){
+#check{
+	display: none;
+
+}
+}
+@media (min-width:1200px){
+	#mediaset{
+		display: none;
+		align-items: center;
+		justify-content: center;
+	}
+}
 .heading-card {
     height: 50px;
     background: #fff;
@@ -1648,7 +1661,7 @@ $(document).ready(function()
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
-			  <div><img src="https://raw.githubusercontent.com/ssgirlsedu/ksmiti.github.io/main/CHECK.png"></div>
+			  <div><img src="https://raw.githubusercontent.com/ssgirlsedu/ksmiti.github.io/main/CHECK.png" id ="check"></div>
             </ul>
 			
             <form class="d-flex">
@@ -1658,6 +1671,9 @@ $(document).ready(function()
           </div>
         </div>
       </nav>
+	  <div class="media">
+		<img src="https://raw.githubusercontent.com/ssgirlsedu/ksmiti.github.io/main/CHECK.png" id="mediaset">
+	  </div>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
